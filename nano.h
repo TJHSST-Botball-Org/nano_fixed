@@ -16,7 +16,6 @@ docs will help you the rest of the way
 
 namespace Nano {
     void start_nano();
-
     
     class BaseRobot {
         public:
@@ -55,6 +54,14 @@ namespace Nano {
             void get_gyro_x();
             int get_gyro_y();
             int get_gyro_z();
+        
+        	void get_accel_x();
+            void get_accel_y();
+            void get_accel_z();
+            void calibrate_accel_z();
+			void calibrate_accel_y();
+    		void calibrate_accel_x();
+        	//void start_accel_thread(); //matthew 3-27
 
             // Advanced functions that most teams will likely not use.
             void get_pid_gains(int motor, short& p, short& i, short& d, short& pd, short& id, short& dd);
